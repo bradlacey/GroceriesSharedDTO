@@ -9,6 +9,8 @@ import Foundation
 
 public struct GroceryCategoryResponseDTO: Codable {
     
+    // This has to match what we get back from Postman in our GET requests
+    
     // Everything we need to [???]] a GroceryCategory
     
     public let id: UUID

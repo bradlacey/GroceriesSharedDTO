@@ -9,6 +9,8 @@ import Foundation
 
 public struct GroceryCategoryRequestDTO: Codable {
     
+    // This has to match what we send from Postman in our POST requests (ie creating a new GroceryCategory)
+    
     // Everything we need to create a GroceryCategory
     
     public let title: String
