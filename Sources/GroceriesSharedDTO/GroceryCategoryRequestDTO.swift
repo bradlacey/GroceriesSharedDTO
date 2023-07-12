@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GroceryCategoryRequestDTO: Codable {
+public struct GroceryCategoryRequestDTO: Codable {
     
     // Everything we need to create a GroceryCategory
     
