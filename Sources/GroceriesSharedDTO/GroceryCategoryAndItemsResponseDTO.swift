@@ -1,13 +1,13 @@
 //
-//  GroceryCategoryResponseDTO.swift
-//  
+//  GroceryCategoryAndItemsResponseDTO.swift
+//
 //
 //  Created by Brad on 12/7/2023.
 //
 
 import Foundation
 
-public struct GroceryCategoryResponseDTO: Codable {
+public struct GroceryCategoryAndItemsResponseDTO: Codable {
     
     // This has to match what we get back from Postman in our GET requests
     
@@ -16,10 +16,12 @@ public struct GroceryCategoryResponseDTO: Codable {
     public let id: UUID
     public let title: String
     public let colourCode: String
+    public let items: [GroceryItemResponseDTO]
     
-    public init(id: UUID, title: String, colourCode: String) {
+    public init(id: UUID, title: String, colourCode: String, items: [GroceryItemResponseDTO]) {
         self.id = id
         self.title = title
         self.colourCode = colourCode
+        self.items = items
     }
 }
